@@ -2,16 +2,16 @@
  * @Author: beicunxun 2929121301@qq.com
  * @Date: 2022-07-02 17:05:02
  * @LastEditors: beicunxun 2929121301@qq.com
- * @LastEditTime: 2022-07-02 18:07:06
+ * @LastEditTime: 2022-07-02 18:11:26
  * @FilePath: \try2\leecodee.c
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
 #include <stdio.h>
 #include <stdlib.h>
 
-int i_cmp (const void* e1, const void* e2)          //qsort默认升序排序，想要降序排序只需要调                                   
+int i_cmp(const void* a, const void* b)
 {
-	return *((int*)e2) - *((int*)e1);     //void*指针不能解引用，需要强制类型转换为int*型
+    return *((int*)a) - *((int*)b);
 }
 void print(int arr[], int sz)
 {
